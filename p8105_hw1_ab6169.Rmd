@@ -68,5 +68,10 @@ weather_df <-
   )
 ```
 
+Then, I took the mean of the variables `norm_sample` and `vec_logical`. Taking the mean of `vec_char` and `vec_factor` returned an error because characters and factors aren't numerical and cannot be averaged. 
+```{r}
+mean(pull(weather_df, norm_sample))
+mean(pull(weather_df, vec_logical))
 
+```
 
