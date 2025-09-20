@@ -9,6 +9,7 @@ date: "2025-09-20"
 
 I first started by installing the necessary packages. 
 ```{r include=FALSE}
+library(tidyverse)
 library(moderndive)
 library(ggplot2)
 ```
@@ -53,5 +54,19 @@ In Problem 1, I looked at the `early_january_weather` dataset from the `moderndi
 
 
 ## Problem 2 
+
+I created a dataframe. 
+
+```{r}
+weather_df <- 
+  tibble(
+    norm_sample = rnorm(10),
+    vec_logical = norm_sample > 0,
+    vec_char    = c("a","b","c","d","e","f","g","h","i","j"),
+    vec_factor  = factor(c("low","medium","high","low","medium",
+                           "high","low","medium","high","low"))
+  )
+```
+
 
 
