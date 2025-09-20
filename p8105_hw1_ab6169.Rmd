@@ -1,7 +1,14 @@
 ---
-title: "p8105_hw1_ab6169"
-author: "Amrutha Banda
+title: "P8105_hw1_ab6169"
+author: "Amrutha Banda"
 output: github_document
 date: "2025-09-20"
 ---
 
+## Problem 1 
+
+Installing Packages 
+```{r include=FALSE}
+library(moderndive)
+library(ggplot2)
+```
